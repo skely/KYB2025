@@ -60,15 +60,15 @@ Pro každý nový bod proces opakuješ.
 
 ## Shrnutí algoritmu
 
-| Krok | Co dělá | Výsledek |
-|------|----------|-----------|
-| 1 | Měj trénovací data | Body s třídami |
-| 2 | Zvol k | Kolik sousedů použít |
-| 3 | Spočítej vzdálenosti | Seznam (vzdálenost, třída) |
-| 4 | Seřaď | Najdi k nejbližších |
-| 5 | Hlasování | Urči třídu podle většiny |
-| 6 | (volitelné) vážení | Blízcí sousedi mají větší vliv |
-| 7 | Výsledek | Predikovaná třída bodu |
+| Krok | Co dělá              | Výsledek                       |
+|------|----------------------|--------------------------------|
+| 1    | Měj trénovací data   | Body s třídami                 |
+| 2    | Zvol k               | Kolik sousedů použít           |
+| 3    | Spočítej vzdálenosti | Seznam (vzdálenost, třída)     |
+| 4    | Seřaď                | Najdi k nejbližších            |
+| 5    | Hlasování            | Urči třídu podle většiny       |
+| 6    | (volitelné) vážení   | Blízcí sousedi mají větší vliv |
+| 7    | Výsledek             | Predikovaná třída bodu         |
 
 ---
 
@@ -77,19 +77,19 @@ Pro každý nový bod proces opakuješ.
 Tréninková data:
 
 | Bod | x₁ | x₂ | Třída |
-|------|----|----|--------|
-| A | 1 | 1 | +1 |
-| B | 2 | 1 | +1 |
-| C | 1 | -1 | -1 |
+|-----|----|----|-------|
+| A   | 1  | 1  | +1    |
+| B   | 2  | 1  | +1    |
+| C   | 1  | -1 | -1    |
 
 Nový bod: Q = (2, 0), k = 3
 
 Vzdálenosti:
 
 | Sous. | Třída | Vzdál. |
-|:--:|:--:|:--:|
-| B | +1 | 1.00 |
-| A | +1 | 1.41 |
-| C | -1 | 2.24 |
+|:-----:|:-----:|:------:|
+|   B   |  +1   |  1.00  |
+|   A   |  +1   |  1.41  |
+|   C   |  -1   |  2.24  |
 
 Hlasování: (+1, +1, -1) → Výsledek: třída **+1**

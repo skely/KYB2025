@@ -31,7 +31,7 @@ plt.show()
 a = (n * np.sum(x*y) - np.sum(x) * np.sum(y)) / (n*np.sum(x**2) - (np.sum(x))**2)
 b = (np.sum(y) - a*np.sum(x)) / n
 
-# Predikce
+# Predikce.
 y_pred = a * x + b
 
 # -------------------------------
